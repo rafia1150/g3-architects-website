@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    font-family:  "Open Sans", sans-serif;
+}
+.logo_title{
+    font-size: 40px;
+}
+header{
+      background-color:rgba(255 , 144 , 14 , 0.10);
+      padding:60px 240px;
+      
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 100px 0px 100px;
+}
+ul{
+    display:flex;
+    margin:10px;
+    font-size: 25px;
+}
+ul li {
+    margin:20px;
+    padding:10px;
+    
+    list-style-type:none;
+}
+  ul li a{
+    text-decoration: none; 
+}
+.banner{
+    text-align: center;
+}
+.banner_container{
+    max-width: 800px;
+    margin:0 auto;
+    /* text-align: center; */
+}
+.banner_title{
+    font-size:50px;
+    color:black;
+}
+.banner img{
+    height:100%;
+    padding-top: 20px;
+    margin:30px;
+}
+.btn_primary{
+   color:white;
+   background-color: darkorange;
+   font-size: 30px;
+   border-radius: 8px;
+   border:none;
+   padding:10px;
+   margin:10px;
+}
+.banner p{
+   color:rgb(54, 46, 46);
+}
+/* mobile display */
+ @media screen  and (max-width:576px) {
+    header{
+        padding:20px 20px;
+    }
+    nav ul li a{
+        font-size:10px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner_container img{
+        height:30%;
+        margin:10px;
+    }
+     /* .team_img{
+        grid-template-columns:1fr;
+    }
+    .team_info{
+        padding-left: 20px;
+        padding-right: 20px;
+    }  */
+
+
+} 
+
+   
+    /* tablet display */
+    /* @media screen and (min-width:577px) and (max-width:992px) {
+        header{
+            padding:40px;
+        }
+        nav , .team_container{
+            flex-direction: column;
+        }
+        .team_img{
+            grid-template-columns:2fr;
+        }
+    
+        
+    } */
+    
+/* header close */
+main{
+    width:1440px;
+    margin:auto;
+}
+.span , .orange{
+    color: darkorange;
+}
+h2{
+        font-size: 50px;
+        font-weight:500;
+        width:700px;
+        line-height:normal;
+        display:inline-block;
+}
+
+
+.span , .quick{
+    /* color:727272; */
+    color:rgb(197, 195, 195);
+    font-weight: 500;
+    margin: -5px;
+    display: inline;
+}
+
+.team_img{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 47px;
+    margin: 1px;
+}
+.team_container{
+    display:flex;
+    padding:70px;
+    
+}
+img{
+    padding: 2px;
+    margin: 7px;
+    border-radius: 7px;
+    border:none;
+}
+
+  .team_info p{
+    font-size: 18px;
+    color: darkgray;
+}
+/* first section done */
+.Dexktop{
+    height: 133px;
+    width: 543px;
+    border:2px;
+    box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.06);
+    padding: 35px;
+    margin: 20px;
+}
+
+.experience{
+    background-color: darkorange;
+    color:white;
+    height: 157px;
+    width: 264px;
+    margin: 20px;
+    padding-top: 4px;
+    text-align: center;
+    position:relative;
+    bottom: 100px;
+    left: -32px;
+    border: 1px;
+    border-radius: 5px;
+}
+
+
+.experience h1{
+       font-size: 50px;
+       line-height: 0.01;
+}
+.experience p{
+    font-size: 25px;
+}
+.description{
+    display: flex;
+    padding-top: 100px;
+}
+.main_features{
+    padding-left: -27px;
+    margin-right:130px;
+   
+}
+.main_features h3{
+    font-size: 25px;
+}
+.main_features p{
+    font-size: 18px;
+    color: darkgray;
+}
+.features{
+    font-size: 50px;
+    font-weight: bold;
+    border-left:8px solid orange;
+    padding:15px;
+}
+/* second section css close */
+.icon_title{
+    border:1px solid red;
+    width: 301px;
+    border-radius: 14px;
+    text-align: center;
+    padding: 11px;
+    margin: 26px;
+}
+.four_icons{
+    padding:70px 0px 17px 0px;
+}
+.main_facts p{
+    font-size: 18px;
+    color: darkgray;
+    
+}
+.facts{
+    font-size: 50px;
+    font-weight: 660;
+    
+}
+.main_icon_des{
+    display:flex;
+}
+.icon_title h1{
+    font-size: 50px;
+    font-weight: 660;
+    line-height: 0.01;
+}
+.icon_title img{
+    /* padding-top:15px; */
+}
+.icon_title p{
+    font-size: 23px;
+    color:rgb(107, 101, 101);
+}
+/* third section done */
+.main_spons{
+    padding: 122px 4px 90px 0px;
+}
+.sponspors{
+    text-align: center;
+}
+.sponspors p{
+    font-size: 18px;
+    color: darkgray;
+}
+.sponspors h1{
+    font-size: 50px;
+    font-weight: 660;
+}
+.spons_img img{
+    padding: 32px;
+    margin: 27px;
+}
+/* fourth section done */
+.all_right{
+    text-align: center;
+    background-color:rgba(255 , 144 , 14 , 0.10);
+    padding: 45px;
+    margin: 90px;
+    width: 1649px;
+    margin-left: 249px;
+}
+.all_right h3{
+    color:darkgray;
+    font-size: 21px;
+    
+}
+/* footer done */
