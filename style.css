@@ -74,20 +74,20 @@ ul li {
         height:30%;
         margin:10px;
     }
-     /* .team_img{
+      .team_img{
         grid-template-columns:1fr;
     }
     .team_info{
         padding-left: 20px;
         padding-right: 20px;
-    }  */
+    }  
 
 
 } 
 
    
     /* tablet display */
-    /* @media screen and (min-width:577px) and (max-width:992px) {
+     @media screen and (min-width:577px) and (max-width:992px) {
         header{
             padding:40px;
         }
@@ -99,7 +99,7 @@ ul li {
         }
     
         
-    } */
+    } 
     
 /* header close */
 main{
