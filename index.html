@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G3 Architects</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .team_container {
+    display: flex;
+    align-items: center;
+
+}
+
+.team_img_container {
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 20px;
+}
+.team_info_container {
+    padding-left: 78px;
+    padding-right: 50px;
+}
+/* for mobile display */
+@media screen and (max-width:576px) {
+    .team_container{
+        flex-direction: column;
+    }
+    .team_img_container{
+        grid-template-columns:1fr;
+    }
+}
+/* For tablet display */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .team_container{
+        flex-direction: column;
+    }
+    /* .team_img_container{
+        grid-template-columns:2fr;
+    } */
+}
+
+    </style>
 </head>
 <body>
     <header>
@@ -24,23 +60,23 @@
              some form, by injected humour, or randomised words which don't look even</p>
             <button class="btn_primary">Explore More</button>
         </div>
-        <div>
+       
             <img src="images/banner.png">
-        </div>
+       
 
     </div>
     </header>
-    <main>
+     <main>
         
         <section class="team_container">
-        <div class="team_img">
+        <div class="team_img_container">
           <img src="images/team1.png" alt="">
           <img src="images/team2.png" alt="">
           <img src="images/team3.png" alt="">
           <img src="images/team4.png" alt="">
         </div>
-        <div class="team_info">
-           <h2> <span class="quick">Quick list </span>of Our<br>
+        <div class="team_info_container">
+           <h2 class="team_info_title"> <span class="quick">Quick list </span>of Our<br>
              <span class="orange">Features</span></h2>
             <p>There are many variations of passages of Lorem Ipsum available, <br>
             but the majority have suffered alteration in some form, by injected <br>
@@ -49,7 +85,7 @@
         </div>
         </section>
         <!-- second section start-->
-        <section class="description">
+          <section class="description">
            <div class="main_features">
             <div>
                 <h1 class="features">Features you will<br>
@@ -85,17 +121,16 @@
                 </div>
             </div>
            </div>
-           <div>
+           <div class="features-img">
             <img src="images/architect.png">
             <div class="experience">
                 <h1>10+Year</h1>
                 <p>Experience</p>
             </div>
            </div>
-        
         </section>
         <!-- sceond section close -->
-        <section class="four_icons">
+         <section class="four_icons">
             <div class="main_facts">
             <h2 class="facts">Some Facts</h2>
             <p>There are many variations of passages of Lorem Ipsum available, but <br>
@@ -125,7 +160,7 @@
             </div>
         </section>
         <!-- third section close -->
-        <section class="main_spons">
+         <section class="main_spons">
             <div class="sponspors">
                 <h1>Our Sponspors</h1>
                 <p>There are many variations of passages of Lorem Ipsum available, but <br>
@@ -139,9 +174,9 @@
              <img src="images/sponsors/figma.png" alt="">
             </div>
         </section>
-        <!-- fourth section close -->
     </main>
-    <footer class="all_right">
+    <!-- fourth section close -->
+     <footer class="all_right">
         <h3>All rights reserved copyright@2023 startup landing page design</h3>
     </footer>
 </body>

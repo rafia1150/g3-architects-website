@@ -3,23 +3,21 @@
     font-family:  "Open Sans", sans-serif;
 }
 .logo_title{
-    font-size: 40px;
+    font-size: 45px;
 }
 header{
       background-color:rgba(255 , 144 , 14 , 0.10);
-      padding:60px 240px;
+      padding:50px 240px;
       
 }
 nav{
     display:flex;
     justify-content: space-between;
     text-align: center;
-    padding: 10px 100px 0px 100px;
 }
-ul{
+nav ul{
     display:flex;
     margin:10px;
-    font-size: 25px;
 }
 ul li {
     margin:20px;
@@ -28,7 +26,8 @@ ul li {
     list-style-type:none;
 }
   ul li a{
-    text-decoration: none; 
+    text-decoration: none;
+    font-size: 18px; 
 }
 .banner{
     text-align: center;
@@ -36,16 +35,14 @@ ul li {
 .banner_container{
     max-width: 800px;
     margin:0 auto;
-    /* text-align: center; */
 }
 .banner_title{
     font-size:50px;
     color:black;
 }
 .banner img{
-    height:100%;
-    padding-top: 20px;
-    margin:30px;
+    width: 100%;
+    margin-top: 20px;
 }
 .btn_primary{
    color:white;
@@ -59,103 +56,25 @@ ul li {
 .banner p{
    color:rgb(54, 46, 46);
 }
-/* mobile display */
- @media screen  and (max-width:576px) {
-    header{
-        padding:20px 20px;
-    }
-    nav ul li a{
-        font-size:10px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    .banner_container img{
-        height:30%;
-        margin:10px;
-    }
-      .team_img{
-        grid-template-columns:1fr;
-    }
-    .team_info{
-        padding-left: 20px;
-        padding-right: 20px;
-    }  
 
-
-} 
-
-   
-    /* tablet display */
-     @media screen and (min-width:577px) and (max-width:992px) {
-        header{
-            padding:40px;
-        }
-        nav , .team_container{
-            flex-direction: column;
-        }
-        .team_img{
-            grid-template-columns:2fr;
-        }
-    
-        
-    } 
     
 /* header close */
 main{
-    width:1440px;
-    margin:auto;
-}
-.span , .orange{
-    color: darkorange;
-}
-h2{
-        font-size: 50px;
-        font-weight:500;
-        width:700px;
-        line-height:normal;
-        display:inline-block;
+    max-width:1450px;
+    margin:70px auto;
 }
 
 
-.span , .quick{
-    /* color:727272; */
-    color:rgb(197, 195, 195);
-    font-weight: 500;
-    margin: -5px;
-    display: inline;
-}
 
-.team_img{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    padding: 47px;
-    margin: 1px;
-}
-.team_container{
-    display:flex;
-    padding:70px;
-    
-}
-img{
-    padding: 2px;
-    margin: 7px;
-    border-radius: 7px;
-    border:none;
-}
 
-  .team_info p{
-    font-size: 18px;
-    color: darkgray;
-}
 /* first section done */
-.Dexktop{
-    height: 133px;
-    width: 543px;
-    border:2px;
+.Dexktop .main_features{
+    border:2px; 
+    border-radius: 8px;
     box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.06);
-    padding: 35px;
-    margin: 20px;
+    padding: 30px;
+    margin-bottom:20px;
+    background:#fff;
 }
 
 .experience{
@@ -183,16 +102,13 @@ img{
 }
 .description{
     display: flex;
-    padding-top: 100px;
+    margin-top: 130px;
+    gap: 100px;
 }
-.main_features{
-    padding-left: -27px;
-    margin-right:130px;
-   
+.features-img img{
+         width:100%;
 }
-.main_features h3{
-    font-size: 25px;
-}
+
 .main_features p{
     font-size: 18px;
     color: darkgray;
@@ -233,9 +149,7 @@ img{
     font-weight: 660;
     line-height: 0.01;
 }
-.icon_title img{
-    /* padding-top:15px; */
-}
+
 .icon_title p{
     font-size: 23px;
     color:rgb(107, 101, 101);
@@ -274,3 +188,110 @@ img{
     
 }
 /* footer done */
+
+
+
+
+
+/* mobile display */
+@media screen and (max-width:576px) {
+    header{
+        padding:20px;
+    } 
+    nav {
+        flex-direction: column;
+    }
+    nav ul{
+        margin: -72px;
+        padding: 34px;
+    } 
+    .description{
+        flex-direction:column;
+
+    }
+    .features , .facts , .sponspors h1{
+        font-size:30px;
+    }
+    .experience{
+        width:100px;
+        height:100px;
+    }
+    .experience h1{
+        font-size:13px;
+    }
+    .experience p{
+        font-size: 10px;
+    }
+    .btn_primary{
+        padding:15px 13px;
+    }
+    .main_icon_des{
+        flex-direction: column;
+    }
+    .main_spons{
+        padding:10px;
+        margin:10px;
+    }
+    .all_right{
+        width:100%;
+        padding:10px;
+        margin:10px;
+    }
+    .all_right h3{
+        font-size: 11px;
+    }
+}
+
+
+   
+    /* tablet display */
+     @media screen and (min-width:577px) and (max-width:992px) {
+        header{
+            padding:40px;
+        }
+        nav {
+            flex-direction: column;
+        }
+        /* nav ul{
+            margin: 50px;
+            padding: 50px;
+        }  */
+        .description{
+            flex-direction:column;
+    
+        }
+        .features , .facts , .sponspors h1{
+            font-size:35px;
+        }
+        .experience{
+            width:206px;
+            height:100px;
+        }
+        .experience h1{
+            font-size:30px;
+        }
+        .experience p{
+            font-size: 20px;
+        }
+        .btn_primary{
+            padding:20px 15px;
+            font-size: 15px;
+        }
+        .main_spons{
+            padding:10px;
+            margin:10px;
+        }
+        .all_right{
+            width:100%;
+            padding:10px;
+            margin:10px;
+        }
+        .all_right h3{
+            font-size: 20px;
+        }
+        .spons_img img{
+            padding: 5px;
+            margin: 26px;
+        }
+
+    } 
